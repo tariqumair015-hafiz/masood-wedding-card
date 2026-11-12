@@ -2,50 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Royal Invitation — Baraat & Walima of Masood Ahmad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#051610">
+  <title>Baraat &amp; Walima — Masood Ahmad · 15 &amp; 16 November 2026</title>
   
-  <!-- Premium Google Fonts -->
+  <meta name="description" content="You are cordially invited to the Baraat & Walima of Masood Ahmad. Baraat: Sunday 15 November 2026, Muridke. Walima: Monday 16 November 2026, Lahore." />
+  <meta property="og:title" content="Baraat &amp; Walima — Masood Ahmad" />
+  <meta property="og:description" content="You are cordially invited to the Baraat & Walima of Masood Ahmad. Baraat: Sunday 15 Nov, Walima: Monday 16 Nov 2026." />
+
+  <!-- Premium Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     /* ==========================================================================
-       ROYAL EMERALD & GOLD DESIGN SYSTEM
+       ROYAL MOBILE-FIRST RESPONSIVE THEME
        ========================================================================== */
     :root {
-      --bg-dark: #051610;
-      --bg-emerald-deep: #092218;
-      --bg-emerald-card: #0d2f22;
-      --bg-emerald-light: #133f2e;
-      --emerald-glow: rgba(20, 85, 60, 0.45);
+      --bg-dark: #04140e;
+      --bg-emerald-deep: #082419;
+      --bg-emerald-card: #0c3324;
+      --bg-emerald-light: #124531;
       
       --gold-100: #fff9db;
       --gold-200: #fae892;
       --gold-300: #f5d760;
       --gold-400: #e2ba34;
       --gold-500: #c59b27;
-      --gold-600: #9e7819;
       --gold-foil: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
-      --gold-foil-light: linear-gradient(135deg, #d4af37 0%, #fff2a3 30%, #c59b27 60%, #ffe07a 100%);
       --gold-border: rgba(212, 175, 55, 0.4);
-      --gold-border-bright: rgba(250, 232, 146, 0.75);
+      --gold-border-bright: rgba(250, 232, 146, 0.85);
 
-      --ivory-paper: #fcf9f2;
-      --ivory-dark: #f0e8d5;
-      --text-gold: #f3e29f;
-      --text-light: #eef5f1;
-      --text-muted: #9ab4a7;
+      --text-light: #f5f8f6;
+      --text-muted: #a3beaf;
+      --text-gold: #f7e6a1;
 
-      --shadow-luxury: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 40px rgba(197, 155, 39, 0.15);
-      --shadow-gold: 0 0 25px rgba(212, 175, 55, 0.35);
       --font-groom: "Alex Brush", cursive;
-      --font-display: "Cinzel", serif;
+      --font-display: "Cinzel", Georgia, serif;
       --font-arabic: "Amiri", serif;
       --font-urdu: "Noto Nastaliq Urdu", serif;
       --font-serif: "Cormorant Garamond", Georgia, serif;
-      --font-sans: "Plus Jakarta Sans", sans-serif;
+      --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
 
     * {
@@ -55,117 +53,112 @@
       -webkit-tap-highlight-color: transparent;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
+    html, body {
       background-color: var(--bg-dark);
       color: var(--text-light);
       font-family: var(--font-serif);
-      font-size: 18px;
+      font-size: 17px;
       line-height: 1.6;
       overflow-x: hidden;
+      width: 100%;
       min-height: 100vh;
       position: relative;
     }
 
-    /* Ambient Silk & Islamic Texture Background */
+    /* Ambient Subtle Pattern */
     .bg-pattern {
       position: fixed;
       inset: 0;
       pointer-events: none;
       z-index: 0;
-      opacity: 0.08;
+      opacity: 0.05;
       background-image: radial-gradient(#d4af37 1px, transparent 1px), radial-gradient(#d4af37 1px, var(--bg-dark) 1px);
-      background-size: 40px 40px;
-      background-position: 0 0, 20px 20px;
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
     }
 
-    /* Canvas for Falling Rose Petals & Gold Stardust */
     #fx-canvas {
       position: fixed;
       inset: 0;
       pointer-events: none;
-      z-index: 50;
+      z-index: 40;
     }
 
     /* Floating Audio Player Button */
     .audio-toggle-btn {
       position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 100;
-      background: rgba(13, 47, 34, 0.85);
+      top: 14px;
+      right: 14px;
+      z-index: 120;
+      background: rgba(8, 36, 25, 0.92);
       border: 1px solid var(--gold-border-bright);
       border-radius: 50px;
-      padding: 10px 18px;
+      padding: 8px 14px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       cursor: pointer;
       backdrop-filter: blur(12px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), var(--shadow-gold);
-      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(212, 175, 55, 0.25);
+      transition: all 0.3s ease;
     }
-    .audio-toggle-btn:hover {
-      transform: translateY(-2px) scale(1.04);
-      background: rgba(19, 63, 46, 0.95);
+    .audio-toggle-btn:active {
+      transform: scale(0.95);
     }
     .audio-waves {
       display: flex;
       align-items: center;
-      gap: 3px;
-      height: 16px;
+      gap: 2.5px;
+      height: 14px;
     }
     .audio-bar {
-      width: 3px;
+      width: 2.5px;
       background: var(--gold-300);
       border-radius: 2px;
       animation: barDance 1.2s ease-in-out infinite alternate;
     }
-    .audio-bar:nth-child(1) { height: 14px; animation-delay: 0.1s; }
-    .audio-bar:nth-child(2) { height: 8px; animation-delay: 0.3s; }
-    .audio-bar:nth-child(3) { height: 16px; animation-delay: 0.2s; }
-    .audio-bar:nth-child(4) { height: 10px; animation-delay: 0.4s; }
+    .audio-bar:nth-child(1) { height: 12px; animation-delay: 0.1s; }
+    .audio-bar:nth-child(2) { height: 7px; animation-delay: 0.3s; }
+    .audio-bar:nth-child(3) { height: 14px; animation-delay: 0.2s; }
+    .audio-bar:nth-child(4) { height: 8px; animation-delay: 0.4s; }
     .audio-muted .audio-bar {
       animation: none !important;
-      height: 3px !important;
-      opacity: 0.5;
+      height: 2.5px !important;
+      opacity: 0.4;
     }
     .audio-text {
       font-family: var(--font-display);
-      font-size: 11px;
+      font-size: 10px;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--gold-200);
-      font-weight: 600;
+      font-weight: 700;
     }
 
     /* Container */
     .container {
       width: 100%;
-      max-width: 1080px;
+      max-width: 960px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 12px;
       position: relative;
       z-index: 10;
     }
 
     /* ==========================================================================
-       HERO ENVELOPE / UNBOXING EXPERIENCE
+       ROYAL ENVELOPE / WAX SEAL UNBOXING SCREEN
        ========================================================================== */
     #envelope-screen {
       position: fixed;
       inset: 0;
-      z-index: 90;
-      background: radial-gradient(circle at center, #0e3727 0%, #051610 80%);
+      z-index: 100;
+      background: radial-gradient(circle at center, #0a2d1f 0%, #03100a 85%);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 20px;
-      transition: opacity 1.2s cubic-bezier(0.19, 1, 0.22, 1), visibility 1.2s;
+      padding: 16px;
+      transition: opacity 0.9s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.9s;
     }
     #envelope-screen.opened {
       opacity: 0;
@@ -174,38 +167,35 @@
     }
 
     .envelope-wrapper {
-      perspective: 1400px;
+      perspective: 1200px;
       width: 100%;
-      max-width: 520px;
+      max-width: 460px;
       position: relative;
       cursor: pointer;
     }
 
     .envelope-box {
       width: 100%;
-      height: 340px;
+      height: clamp(230px, 58vw, 310px);
       position: relative;
-      background: linear-gradient(145deg, #0a2c1f 0%, #061e15 100%);
+      background: linear-gradient(145deg, #092c1f 0%, #051b13 100%);
       border-radius: 14px;
-      box-shadow: 0 35px 80px rgba(0, 0, 0, 0.8), 0 0 50px rgba(212, 175, 55, 0.2);
-      border: 2px solid var(--gold-border);
-      position: relative;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(212, 175, 55, 0.25);
+      border: 1.5px solid var(--gold-border);
       overflow: hidden;
-      transition: transform 0.5s ease;
+      transition: transform 0.4s ease;
     }
-    .envelope-wrapper:hover .envelope-box {
-      transform: translateY(-6px);
-      box-shadow: 0 45px 95px rgba(0, 0, 0, 0.85), 0 0 65px rgba(212, 175, 55, 0.35);
+    .envelope-wrapper:active .envelope-box {
+      transform: scale(0.98);
     }
 
-    /* Flap & Inner lining */
     .envelope-inner-fold {
       position: absolute;
       inset: 0;
       background: 
         linear-gradient(45deg, rgba(197, 155, 39, 0.08) 25%, transparent 25%),
         linear-gradient(-45deg, rgba(197, 155, 39, 0.08) 25%, transparent 25%);
-      background-size: 30px 30px;
+      background-size: 24px 24px;
     }
 
     .envelope-flaps {
@@ -219,9 +209,9 @@
       top: 0;
       bottom: 0;
       width: 50%;
-      background: linear-gradient(to right, rgba(9, 34, 24, 0.95), rgba(7, 26, 19, 0.98));
+      background: linear-gradient(to right, rgba(9, 34, 24, 0.96), rgba(6, 24, 17, 0.98));
       clip-path: polygon(0 0, 100% 50%, 0 100%);
-      border-left: 2px solid var(--gold-border);
+      border-left: 1.5px solid var(--gold-border);
     }
     .flap-right {
       position: absolute;
@@ -229,9 +219,9 @@
       top: 0;
       bottom: 0;
       width: 50%;
-      background: linear-gradient(to left, rgba(9, 34, 24, 0.95), rgba(7, 26, 19, 0.98));
+      background: linear-gradient(to left, rgba(9, 34, 24, 0.96), rgba(6, 24, 17, 0.98));
       clip-path: polygon(100% 0, 0 50%, 100% 100%);
-      border-right: 2px solid var(--gold-border);
+      border-right: 1.5px solid var(--gold-border);
     }
     .flap-bottom {
       position: absolute;
@@ -239,10 +229,9 @@
       left: 0;
       right: 0;
       height: 60%;
-      background: linear-gradient(to top, #061c13, rgba(10, 38, 27, 0.95));
-      clip-path: polygon(0 100%, 50% 15%, 100% 100%);
-      border-bottom: 2px solid var(--gold-border);
-      box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+      background: linear-gradient(to top, #051911, rgba(9, 36, 26, 0.95));
+      clip-path: polygon(0 100%, 50% 18%, 100% 100%);
+      border-bottom: 1.5px solid var(--gold-border);
     }
     .flap-top {
       position: absolute;
@@ -250,45 +239,42 @@
       left: 0;
       right: 0;
       height: 60%;
-      background: linear-gradient(to bottom, #114230, #09281c);
+      background: linear-gradient(to bottom, #114230, #082419);
       clip-path: polygon(0 0, 50% 85%, 100% 0);
       transform-origin: top;
-      transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
       z-index: 5;
-      border-top: 2px solid var(--gold-border-bright);
+      border-top: 1.5px solid var(--gold-border-bright);
     }
     .envelope-box.open .flap-top {
       transform: rotateX(180deg);
     }
 
-    /* 3D Wax Seal */
+    /* 3D Wax Seal Button */
     .wax-seal {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -40%);
       z-index: 10;
-      width: 90px;
-      height: 90px;
+      width: clamp(74px, 18vw, 88px);
+      height: clamp(74px, 18vw, 88px);
       border-radius: 50%;
       background: radial-gradient(circle at 35% 35%, #ffd76b, #b9861e 65%, #664708 100%);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7), inset 0 2px 4px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 215, 107, 0.5);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7), inset 0 2px 4px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 215, 107, 0.5);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
       animation: sealPulse 2.4s ease-in-out infinite;
-      transition: all 0.4s ease;
-    }
-    .wax-seal:hover {
-      transform: translate(-50%, -40%) scale(1.1);
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.8), inset 0 3px 6px rgba(255, 255, 255, 0.9), 0 0 50px rgba(255, 215, 107, 0.8);
+      border: none;
+      touch-action: manipulation;
     }
     .wax-seal-inner {
-      width: 72px;
-      height: 72px;
+      width: 80%;
+      height: 80%;
       border-radius: 50%;
-      border: 2px dashed rgba(255, 245, 180, 0.6);
+      border: 1.5px dashed rgba(255, 245, 180, 0.6);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -298,7 +284,7 @@
     .seal-monogram {
       font-family: var(--font-display);
       font-weight: 900;
-      font-size: 28px;
+      font-size: clamp(24px, 6vw, 30px);
       color: #3b2503;
       line-height: 1;
     }
@@ -306,139 +292,141 @@
       font-family: var(--font-sans);
       font-size: 7px;
       font-weight: 800;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
       color: #4a3006;
-      margin-top: 3px;
+      margin-top: 2px;
     }
 
     @keyframes sealPulse {
-      0%, 100% {
-        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7), inset 0 2px 4px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 215, 107, 0.4);
-      }
-      50% {
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8), inset 0 2px 4px rgba(255, 255, 255, 0.8), 0 0 55px rgba(255, 215, 107, 0.75);
-      }
+      0%, 100% { transform: translate(-50%, -40%) scale(1); }
+      50% { transform: translate(-50%, -40%) scale(1.06); box-shadow: 0 14px 32px rgba(0, 0, 0, 0.8), 0 0 45px rgba(255, 215, 107, 0.7); }
     }
 
     .envelope-instruction {
-      margin-top: 30px;
+      margin-top: 22px;
       text-align: center;
+      padding: 0 10px;
     }
     .instruction-tag {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      padding: 10px 24px;
+      gap: 8px;
+      padding: 9px 18px;
       background: rgba(212, 175, 55, 0.12);
       border: 1px solid var(--gold-border-bright);
       border-radius: 50px;
       color: var(--gold-200);
       font-family: var(--font-display);
-      font-size: 13px;
-      letter-spacing: 0.2em;
+      font-size: 11px;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
-      animation: floatBadge 3s ease-in-out infinite;
     }
     .instruction-urdu {
       font-family: var(--font-urdu);
       color: var(--gold-300);
-      font-size: 18px;
-      margin-top: 10px;
+      font-size: 17px;
+      margin-top: 8px;
       direction: rtl;
     }
-    @keyframes floatBadge {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-6px); }
+    .skip-btn {
+      display: inline-block;
+      margin-top: 14px;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 13px;
+      text-decoration: underline;
+      cursor: pointer;
+      font-family: var(--font-sans);
     }
 
     /* ==========================================================================
-       MAIN INVITATION CARD EXPERIENCE
+       MAIN INVITATION CARD CONTENT
        ========================================================================== */
     .invitation-page {
-      padding: 60px 0 100px;
+      padding: 40px 0 80px;
       position: relative;
     }
 
-    /* Card Frame & Islamic Mughal Arch */
     .royal-card {
-      background: linear-gradient(165deg, #082419 0%, #051b13 40%, #03130d 100%);
-      border: 2px solid var(--gold-border);
-      border-radius: 20px;
+      background: linear-gradient(165deg, #07251a 0%, #051c14 45%, #03120d 100%);
+      border: 1.5px solid var(--gold-border);
+      border-radius: 16px;
       position: relative;
-      padding: 50px 35px;
-      box-shadow: var(--shadow-luxury);
+      padding: 38px 18px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 35px rgba(212, 175, 55, 0.15);
       overflow: hidden;
     }
-
-    /* Gold Foil Border Inset */
     .royal-card::before {
       content: "";
       position: absolute;
-      inset: 12px;
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      border-radius: 14px;
+      inset: 8px;
+      border: 1px solid rgba(212, 175, 55, 0.22);
+      border-radius: 12px;
       pointer-events: none;
     }
 
-    /* Corner Arabesque Ornaments */
+    /* Corner Arabesque SVGs */
     .corner-ornament {
       position: absolute;
-      width: 60px;
-      height: 60px;
+      width: 36px;
+      height: 36px;
       color: var(--gold-300);
-      opacity: 0.75;
+      opacity: 0.7;
       pointer-events: none;
     }
-    .corner-tl { top: 18px; left: 18px; }
-    .corner-tr { top: 18px; right: 18px; transform: scaleX(-1); }
-    .corner-bl { bottom: 18px; left: 18px; transform: scaleY(-1); }
-    .corner-br { bottom: 18px; right: 18px; transform: scale(-1); }
+    .corner-tl { top: 12px; left: 12px; }
+    .corner-tr { top: 12px; right: 12px; transform: scaleX(-1); }
+    .corner-bl { bottom: 12px; left: 12px; transform: scaleY(-1); }
+    .corner-br { bottom: 12px; right: 12px; transform: scale(-1); }
 
-    /* Top Quranic Header */
+    /* Quranic Header */
     .quranic-header {
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
     .bismillah-arabic {
       font-family: var(--font-arabic);
-      font-size: clamp(34px, 6vw, 54px);
+      font-size: clamp(28px, 6.8vw, 48px);
       color: var(--gold-200);
       line-height: 1.6;
-      text-shadow: 0 2px 15px rgba(212, 175, 55, 0.4);
+      text-shadow: 0 2px 14px rgba(212, 175, 55, 0.35);
+      word-break: keep-all;
     }
     .ayah-pill {
       display: inline-block;
-      max-width: 640px;
-      margin: 12px auto 0;
-      padding: 8px 24px;
+      width: 100%;
+      max-width: 620px;
+      margin: 10px auto 0;
+      padding: 10px 14px;
       background: rgba(212, 175, 55, 0.08);
-      border-radius: 30px;
+      border-radius: 14px;
       border: 1px solid rgba(212, 175, 55, 0.25);
     }
     .ayah-arabic {
       font-family: var(--font-arabic);
-      font-size: 20px;
+      font-size: clamp(16px, 4.2vw, 20px);
       color: var(--gold-100);
       line-height: 1.8;
       direction: rtl;
     }
     .ayah-translation {
       font-style: italic;
-      font-size: 14px;
+      font-size: 13.5px;
       color: var(--text-muted);
       margin-top: 4px;
+      line-height: 1.4;
     }
 
-    /* Divider */
+    /* Gold Divider */
     .gold-divider {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 15px;
-      margin: 25px auto;
-      max-width: 480px;
+      gap: 12px;
+      margin: 20px auto;
+      max-width: 320px;
     }
     .gold-divider-line {
       flex: 1;
@@ -446,261 +434,245 @@
       background: linear-gradient(90deg, transparent, var(--gold-400), transparent);
     }
     .gold-divider-gem {
-      width: 12px;
-      height: 12px;
+      width: 10px;
+      height: 10px;
       background: var(--gold-foil);
       transform: rotate(45deg);
-      border: 1px solid var(--gold-100);
-      box-shadow: 0 0 10px var(--gold-400);
+      box-shadow: 0 0 8px var(--gold-400);
     }
 
-    /* Invitation Call */
+    /* Invitation Intro */
     .invitation-intro {
       text-align: center;
-      margin: 20px 0 10px;
+      margin: 16px 0 10px;
     }
     .invitation-tagline {
       font-family: var(--font-display);
-      font-size: clamp(12px, 2.2vw, 15px);
-      letter-spacing: 0.35em;
+      font-size: 12px;
+      letter-spacing: 0.25em;
       text-transform: uppercase;
       color: var(--gold-300);
-      font-weight: 600;
+      font-weight: 700;
     }
     .invitation-parents {
-      font-size: clamp(20px, 3.2vw, 26px);
-      color: var(--text-light);
-      margin-top: 10px;
+      font-size: clamp(18px, 4.4vw, 24px);
+      color: #ffffff;
+      margin-top: 8px;
       font-weight: 600;
+      line-height: 1.35;
     }
     .invitation-subtext {
       color: var(--text-muted);
-      font-size: 19px;
+      font-size: 16px;
       font-style: italic;
       margin-top: 4px;
     }
 
-    /* Groom Spotlight */
+    /* Groom Showcase - Fixed for mobile zero-overflow */
     .groom-showcase {
       text-align: center;
-      margin: 30px 0 40px;
+      margin: 20px 0 32px;
       position: relative;
     }
     .groom-name {
       font-family: var(--font-groom);
-      font-size: clamp(75px, 14vw, 135px);
+      font-size: clamp(52px, 13vw, 110px);
       line-height: 1.05;
       background: var(--gold-foil);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 25px rgba(212, 175, 55, 0.4));
-      margin-bottom: 8px;
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 20px rgba(212, 175, 55, 0.35));
+      margin-bottom: 4px;
+      word-wrap: break-word;
+      white-space: normal;
     }
     .groom-urdu {
       font-family: var(--font-urdu);
-      font-size: clamp(26px, 4.5vw, 36px);
+      font-size: clamp(24px, 6vw, 32px);
       color: var(--gold-200);
       direction: rtl;
-      text-shadow: 0 2px 12px rgba(212, 175, 55, 0.3);
-      line-height: 1.9;
+      line-height: 1.8;
     }
-
-    /* Dual Event Highlights Banner */
     .events-banner {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 20px;
+      gap: 8px;
       flex-wrap: wrap;
-      margin-top: 15px;
+      margin-top: 14px;
     }
     .event-badge {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 8px 20px;
-      border-radius: 40px;
-      background: rgba(19, 63, 46, 0.6);
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 30px;
+      background: rgba(18, 69, 49, 0.6);
       border: 1px solid var(--gold-border);
       color: var(--gold-200);
       font-family: var(--font-display);
-      font-size: 13px;
-      letter-spacing: 0.15em;
+      font-size: 11.5px;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
+      font-weight: 600;
     }
 
     /* ==========================================================================
-       INTERACTIVE DUAL EVENT TABS & 3D CARDS
+       RESPONSIVE EVENT TABS & EVENT DETAILS
        ========================================================================== */
     .events-section {
-      margin-top: 50px;
+      margin-top: 36px;
     }
     .tabs-header {
       display: flex;
       justify-content: center;
-      gap: 16px;
-      margin-bottom: 30px;
-      position: relative;
+      gap: 10px;
+      margin-bottom: 20px;
     }
     .tab-btn {
       flex: 1;
-      max-width: 280px;
-      padding: 16px 20px;
+      max-width: 260px;
+      padding: 12px 10px;
       border-radius: 12px;
       border: 1px solid var(--gold-border);
-      background: rgba(9, 34, 24, 0.8);
+      background: rgba(8, 34, 24, 0.85);
       color: var(--text-muted);
       cursor: pointer;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 6px;
-      transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    .tab-btn:hover {
-      background: rgba(19, 63, 46, 0.9);
-      color: var(--gold-100);
-      transform: translateY(-3px);
+      gap: 4px;
+      transition: all 0.25s ease;
+      touch-action: manipulation;
     }
     .tab-btn.active {
-      background: linear-gradient(145deg, #184e39 0%, #0e3425 100%);
+      background: linear-gradient(145deg, #164e38 0%, #0c3323 100%);
       border-color: var(--gold-border-bright);
-      color: var(--gold-100);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(212, 175, 55, 0.3);
-      transform: translateY(-4px);
+      color: #ffffff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.25);
     }
     .tab-day-title {
       font-family: var(--font-display);
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: 0.15em;
+      font-size: clamp(13px, 3.8vw, 16px);
+      font-weight: 800;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--gold-200);
     }
     .tab-day-subtitle {
-      font-size: 14px;
+      font-size: 12px;
       color: inherit;
     }
 
-    /* Event Display Container */
-    .event-cards-container {
-      position: relative;
-    }
+    /* Event Detail Card */
     .event-detail-card {
       display: none;
-      background: linear-gradient(170deg, #0e3727 0%, #082419 60%, #04140e 100%);
+      background: linear-gradient(170deg, #0d3626 0%, #082419 60%, #04140e 100%);
       border: 1px solid var(--gold-border);
-      border-radius: 18px;
-      padding: 38px 30px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
-      animation: fadeInCard 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+      border-radius: 14px;
+      padding: 24px 16px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+      animation: fadeInCard 0.4s ease;
     }
     .event-detail-card.active {
       display: block;
     }
     @keyframes fadeInCard {
-      from {
-        opacity: 0;
-        transform: translateY(20px) scale(0.98);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Event Card Inner Layout */
     .event-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 35px;
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+    @media (min-width: 768px) {
+      .event-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 28px;
+      }
+      .royal-card {
+        padding: 50px 36px;
+      }
+      .corner-ornament {
+        width: 55px;
+        height: 55px;
+      }
     }
 
-    .event-main-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
     .event-kicker {
       font-family: var(--font-display);
-      font-size: 12px;
-      letter-spacing: 0.3em;
+      font-size: 11px;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--gold-300);
-      margin-bottom: 8px;
+      font-weight: 700;
     }
     .event-title {
       font-family: var(--font-display);
-      font-size: clamp(34px, 5vw, 44px);
-      font-weight: 700;
-      color: var(--gold-100);
-      line-height: 1.1;
+      font-size: clamp(26px, 6vw, 36px);
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-top: 2px;
     }
     .event-urdu-title {
       font-family: var(--font-urdu);
-      font-size: 24px;
+      font-size: clamp(18px, 4.5vw, 22px);
       color: var(--gold-300);
-      margin-top: 6px;
+      margin-top: 4px;
       direction: rtl;
+      line-height: 1.8;
     }
+
     .event-date-box {
-      margin-top: 20px;
-      padding: 16px 20px;
-      background: rgba(5, 22, 16, 0.7);
+      margin: 14px 0;
+      padding: 12px 14px;
+      background: rgba(4, 18, 13, 0.85);
       border-left: 3px solid var(--gold-400);
       border-radius: 0 10px 10px 0;
     }
     .event-date-large {
       font-family: var(--font-display);
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 700;
       color: var(--gold-200);
     }
     .event-time-range {
-      font-size: 17px;
+      font-size: 15px;
       color: var(--text-light);
-      margin-top: 4px;
+      margin-top: 2px;
     }
 
-    /* Countdown Display */
+    /* Live Countdown Grid */
     .countdown-widget {
-      margin-top: 25px;
+      margin: 18px 0;
     }
     .countdown-title {
       font-family: var(--font-display);
       font-size: 11px;
-      letter-spacing: 0.25em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .countdown-title::after {
-      content: "";
-      flex: 1;
-      height: 1px;
-      background: rgba(212, 175, 55, 0.25);
+      color: var(--gold-300);
+      margin-bottom: 8px;
     }
     .countdown-tiles {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
+      gap: 6px;
     }
     .cd-tile {
-      background: linear-gradient(180deg, rgba(20, 68, 50, 0.8) 0%, rgba(9, 34, 24, 0.9) 100%);
+      background: linear-gradient(180deg, rgba(18, 66, 48, 0.9) 0%, rgba(8, 30, 21, 0.95) 100%);
       border: 1px solid var(--gold-border);
       border-radius: 8px;
-      padding: 12px 6px;
+      padding: 10px 4px;
       text-align: center;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-      position: relative;
     }
     .cd-num {
       font-family: var(--font-display);
-      font-size: 28px;
-      font-weight: 700;
+      font-size: clamp(20px, 5.2vw, 26px);
+      font-weight: 800;
       color: var(--gold-100);
       line-height: 1;
     }
@@ -708,33 +680,33 @@
       font-family: var(--font-sans);
       font-size: 9px;
       font-weight: 700;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--text-muted);
-      margin-top: 6px;
+      margin-top: 4px;
     }
 
-    /* Program Timeline */
+    /* Schedule Timeline */
     .timeline-box {
-      margin-top: 25px;
+      margin-top: 18px;
     }
     .timeline-title {
       font-family: var(--font-display);
-      font-size: 12px;
-      letter-spacing: 0.25em;
+      font-size: 11px;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--gold-300);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
     .timeline-list {
       list-style: none;
-      border-left: 2px solid rgba(212, 175, 55, 0.3);
-      padding-left: 18px;
-      margin-left: 8px;
+      border-left: 2px solid rgba(212, 175, 55, 0.35);
+      padding-left: 14px;
+      margin-left: 6px;
     }
     .timeline-item {
       position: relative;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
     .timeline-item:last-child {
       margin-bottom: 0;
@@ -742,164 +714,160 @@
     .timeline-item::before {
       content: "";
       position: absolute;
-      left: -24px;
+      left: -19px;
       top: 6px;
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       background: var(--gold-400);
-      box-shadow: 0 0 10px var(--gold-400);
+      box-shadow: 0 0 8px var(--gold-400);
     }
     .timeline-what {
       font-weight: 600;
-      font-size: 18px;
-      color: var(--text-light);
+      font-size: 16.5px;
+      color: #ffffff;
+      line-height: 1.35;
     }
     .timeline-when {
       font-family: var(--font-display);
-      font-size: 14px;
-      color: var(--gold-200);
-      font-weight: 600;
+      font-size: 13px;
+      color: var(--gold-300);
+      font-weight: 700;
     }
 
-    /* Venue & Map Area */
+    /* Venue Panel */
     .event-venue-panel {
-      background: rgba(5, 22, 16, 0.8);
+      background: rgba(4, 18, 13, 0.85);
       border: 1px solid var(--gold-border);
-      border-radius: 14px;
-      padding: 24px;
+      border-radius: 12px;
+      padding: 20px 16px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
     .venue-kicker {
       font-family: var(--font-display);
-      font-size: 11px;
-      letter-spacing: 0.25em;
+      font-size: 10.5px;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--gold-300);
     }
     .venue-name {
       font-family: var(--font-display);
-      font-size: 26px;
-      font-weight: 700;
+      font-size: 22px;
+      font-weight: 800;
       color: var(--gold-100);
-      margin: 6px 0 4px;
+      margin: 4px 0 2px;
     }
     .venue-address {
       color: var(--text-muted);
-      font-size: 16px;
-      line-height: 1.5;
+      font-size: 15px;
+      line-height: 1.45;
     }
 
-    /* Venue QR & Action Buttons */
     .venue-actions-row {
-      margin-top: 25px;
+      margin-top: 20px;
       display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 16px;
     }
     .qr-card {
       background: #ffffff;
       padding: 8px;
-      border-radius: 10px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-      flex: none;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
       border: 2px solid var(--gold-400);
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 0 auto;
+      width: fit-content;
     }
-    .qr-card svg, .qr-card img {
-      width: 100px;
-      height: 100px;
+    .qr-card svg {
+      width: 90px;
+      height: 90px;
       display: block;
     }
     .qr-label {
       font-family: var(--font-sans);
-      font-size: 9px;
-      font-weight: 700;
-      color: #1a1a1a;
+      font-size: 8.5px;
+      font-weight: 800;
+      color: #0b2218;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       margin-top: 4px;
     }
 
     .venue-buttons {
-      flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      min-width: 200px;
+      gap: 9px;
+      width: 100%;
     }
     .btn-luxury {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      padding: 13px 20px;
+      gap: 8px;
+      width: 100%;
+      min-height: 46px;
+      padding: 11px 14px;
       border-radius: 8px;
       font-family: var(--font-display);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.15em;
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       text-decoration: none;
       cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      border: none;
+      touch-action: manipulation;
+      transition: all 0.25s ease;
+    }
+    .btn-luxury:active {
+      transform: scale(0.98);
     }
     .btn-gold {
       background: var(--gold-foil);
-      color: #211603;
-      border: none;
-    }
-    .btn-gold:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 28px rgba(212, 175, 55, 0.4);
-      filter: brightness(1.08);
+      color: #1a1202;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
     }
     .btn-outline-gold {
-      background: transparent;
+      background: rgba(212, 175, 55, 0.08);
       color: var(--gold-200);
       border: 1px solid var(--gold-border-bright);
     }
-    .btn-outline-gold:hover {
-      background: rgba(212, 175, 55, 0.15);
-      color: var(--gold-100);
-      transform: translateY(-2px);
-    }
 
     /* ==========================================================================
-       HOSTS / MEZBAN SECTION & ONE-CLICK RSVP
+       HOSTS / MEZBAN SECTION (NO HORIZONTAL OVERFLOW)
        ========================================================================== */
     .hosts-section {
-      margin-top: 60px;
+      margin-top: 45px;
       border-top: 1px solid rgba(212, 175, 55, 0.25);
-      padding-top: 50px;
+      padding-top: 36px;
     }
     .section-title-center {
       text-align: center;
-      margin-bottom: 35px;
+      margin-bottom: 24px;
     }
     .section-tag {
       font-family: var(--font-display);
-      font-size: 12px;
-      letter-spacing: 0.3em;
+      font-size: 11px;
+      letter-spacing: 0.25em;
       text-transform: uppercase;
       color: var(--gold-400);
+      font-weight: 700;
     }
     .section-heading {
       font-family: var(--font-display);
-      font-size: clamp(28px, 4vw, 38px);
-      font-weight: 700;
-      color: var(--gold-100);
-      margin-top: 4px;
+      font-size: clamp(24px, 5.5vw, 32px);
+      font-weight: 800;
+      color: #ffffff;
+      margin-top: 2px;
     }
     .section-urdu-heading {
       font-family: var(--font-urdu);
-      font-size: 22px;
+      font-size: 19px;
       color: var(--gold-300);
       margin-top: 4px;
       direction: rtl;
@@ -907,86 +875,88 @@
 
     .hosts-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      width: 100%;
     }
+    @media (min-width: 680px) {
+      .hosts-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    }
+
     .host-card {
-      background: linear-gradient(145deg, #0a2e20 0%, #061e15 100%);
+      background: linear-gradient(145deg, #092c1f 0%, #051b13 100%);
       border: 1px solid var(--gold-border);
-      border-radius: 14px;
-      padding: 26px 24px;
-      position: relative;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-      transition: transform 0.3s ease;
-    }
-    .host-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--gold-border-bright);
+      border-radius: 12px;
+      padding: 20px 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
     }
     .host-badge {
       display: inline-block;
       font-family: var(--font-display);
-      font-size: 10px;
-      letter-spacing: 0.2em;
+      font-size: 9.5px;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--gold-300);
       background: rgba(212, 175, 55, 0.12);
-      padding: 4px 12px;
+      padding: 4px 10px;
       border-radius: 20px;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
+      font-weight: 700;
     }
     .host-name {
       font-family: var(--font-display);
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--gold-100);
+      font-size: 19px;
+      font-weight: 800;
+      color: #ffffff;
       line-height: 1.25;
     }
     .host-relation {
+      font-family: var(--font-urdu);
       font-size: 16px;
       color: var(--text-muted);
-      font-style: italic;
+      direction: rtl;
       margin-top: 4px;
     }
     .host-phone-number {
       font-family: var(--font-display);
-      font-size: 24px;
-      font-weight: 700;
+      font-size: 22px;
+      font-weight: 800;
       letter-spacing: 0.05em;
       color: var(--gold-200);
-      margin: 16px 0 18px;
+      margin: 12px 0 14px;
     }
     .host-actions {
       display: flex;
-      gap: 10px;
+      gap: 8px;
     }
     .btn-call {
       flex: 1;
-      padding: 10px 14px;
+      min-height: 44px;
+      padding: 10px;
       border-radius: 6px;
-      background: rgba(212, 175, 55, 0.12);
+      background: rgba(212, 175, 55, 0.14);
       border: 1px solid var(--gold-border);
       color: var(--gold-200);
       font-family: var(--font-display);
       font-size: 11px;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       text-decoration: none;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 6px;
-      transition: all 0.25s;
-    }
-    .btn-call:hover {
-      background: var(--gold-400);
-      color: #061e15;
+      gap: 5px;
+      font-weight: 700;
     }
     .btn-whatsapp {
-      flex: 1.3;
-      padding: 10px 14px;
+      flex: 1.35;
+      min-height: 44px;
+      padding: 10px;
       border-radius: 6px;
-      background: #1b8e4e;
+      background: #198754;
       border: 1px solid #2ecc71;
       color: #ffffff;
       font-family: var(--font-display);
@@ -997,93 +967,92 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 6px;
-      font-weight: 700;
-      transition: all 0.25s;
-      box-shadow: 0 4px 14px rgba(46, 204, 113, 0.3);
+      gap: 5px;
+      font-weight: 800;
+      box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3);
     }
-    .btn-whatsapp:hover {
-      background: #23a55c;
-      transform: translateY(-2px);
+    .btn-call:active, .btn-whatsapp:active {
+      transform: scale(0.97);
     }
 
     /* ==========================================================================
-       INTERACTIVE DUA & BLESSINGS WALL (TAP FOR FIREWORKS & PETALS)
+       DUA & WISHES SECTION
        ========================================================================== */
     .blessings-section {
-      margin-top: 60px;
-      background: rgba(9, 34, 24, 0.6);
+      margin-top: 45px;
+      background: rgba(8, 32, 23, 0.7);
       border: 1px solid var(--gold-border);
-      border-radius: 16px;
-      padding: 35px 25px;
+      border-radius: 14px;
+      padding: 24px 14px;
       text-align: center;
     }
     .dua-arabic-huge {
       font-family: var(--font-arabic);
-      font-size: clamp(26px, 4.5vw, 38px);
+      font-size: clamp(22px, 5.2vw, 32px);
       color: var(--gold-100);
       line-height: 1.8;
       direction: rtl;
-      text-shadow: 0 2px 15px rgba(212, 175, 55, 0.3);
+      text-shadow: 0 2px 12px rgba(212, 175, 55, 0.3);
     }
     .dua-translation-quote {
       font-style: italic;
       color: var(--text-muted);
-      font-size: 18px;
-      max-width: 650px;
-      margin: 10px auto 25px;
+      font-size: 15px;
+      max-width: 600px;
+      margin: 8px auto 18px;
+      line-height: 1.45;
     }
     .blessing-chips-row {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
-      margin-top: 15px;
+      gap: 8px;
+      margin-top: 12px;
     }
     .blessing-chip {
-      background: rgba(19, 63, 46, 0.8);
+      background: rgba(18, 64, 46, 0.85);
       border: 1px solid var(--gold-border);
-      border-radius: 50px;
-      padding: 10px 22px;
+      border-radius: 30px;
+      padding: 8px 16px;
       color: var(--gold-200);
       font-family: var(--font-urdu);
-      font-size: 18px;
+      font-size: 16px;
       direction: rtl;
       cursor: pointer;
-      transition: all 0.25s ease;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: all 0.2s ease;
+      touch-action: manipulation;
     }
-    .blessing-chip:hover {
+    .blessing-chip:active {
+      transform: scale(0.95);
       background: var(--gold-400);
-      color: #051610;
-      transform: translateY(-3px) scale(1.05);
-      border-color: var(--gold-200);
-      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+      color: #04140e;
     }
 
-    /* Toast Notification */
+    /* Toast */
     #toast-msg {
       position: fixed;
-      bottom: 30px;
+      bottom: 20px;
       left: 50%;
-      transform: translateX(-50%) translateY(100px);
-      background: rgba(9, 34, 24, 0.95);
+      transform: translateX(-50%) translateY(90px);
+      background: rgba(6, 28, 20, 0.96);
       border: 1px solid var(--gold-border-bright);
-      padding: 14px 28px;
+      padding: 10px 20px;
       border-radius: 50px;
       color: var(--gold-200);
       font-family: var(--font-display);
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 0.1em;
-      z-index: 1000;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), var(--shadow-gold);
-      backdrop-filter: blur(12px);
+      z-index: 500;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8), 0 0 15px rgba(212, 175, 55, 0.3);
+      backdrop-filter: blur(10px);
       opacity: 0;
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       pointer-events: none;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
+      max-width: 90%;
+      text-align: center;
     }
     #toast-msg.show {
       transform: translateX(-50%) translateY(0);
@@ -1092,62 +1061,31 @@
 
     /* Footer */
     footer {
-      margin-top: 60px;
+      margin-top: 40px;
       text-align: center;
-      padding-top: 30px;
+      padding-top: 24px;
       border-top: 1px solid rgba(212, 175, 55, 0.2);
     }
     .footer-dates {
       font-family: var(--font-display);
-      font-size: 13px;
-      letter-spacing: 0.3em;
+      font-size: 12px;
+      letter-spacing: 0.25em;
       text-transform: uppercase;
       color: var(--gold-300);
     }
     .footer-copy {
-      font-size: 14px;
+      font-size: 13.5px;
       color: var(--text-muted);
-      margin-top: 8px;
-    }
-
-    /* ==========================================================================
-       RESPONSIVE ADJUSTMENTS
-       ========================================================================== */
-    @media (max-width: 820px) {
-      .event-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-      }
-      .royal-card {
-        padding: 40px 20px;
-      }
-      .royal-card::before {
-        inset: 8px;
-      }
-      .corner-ornament {
-        width: 40px;
-        height: 40px;
-      }
-      .audio-toggle-btn {
-        top: 14px;
-        right: 14px;
-        padding: 8px 14px;
-      }
-      .audio-text {
-        font-size: 10px;
-      }
+      margin-top: 6px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Ambient Golden Dust Pattern -->
   <div class="bg-pattern" aria-hidden="true"></div>
-
-  <!-- Falling Petals & Particle Physics Canvas -->
   <canvas id="fx-canvas" aria-hidden="true"></canvas>
 
-  <!-- Audio Atmosphere Control Button -->
+  <!-- Audio Toggle Button -->
   <button class="audio-toggle-btn audio-muted" id="audioToggle" aria-label="Toggle Royal Atmosphere Music">
     <div class="audio-waves">
       <span class="audio-bar"></span>
@@ -1158,15 +1096,13 @@
     <span class="audio-text" id="audioText">Music: Off</span>
   </button>
 
-  <!-- Toast Notification -->
+  <!-- Toast -->
   <div id="toast-msg">
     <span>✨</span>
     <span id="toast-text">Dua added! May Allah bless the couple.</span>
   </div>
 
-  <!-- ==========================================================================
-       ROYAL ENVELOPE / WAX SEAL UNBOXING OVERLAY
-       ========================================================================== -->
+  <!-- Wax Seal Envelope Overlay -->
   <div id="envelope-screen">
     <div class="envelope-wrapper" id="envelopeWrapper">
       <div class="envelope-box" id="envelopeBox">
@@ -1178,33 +1114,31 @@
           <div class="flap-top" id="flapTop"></div>
         </div>
 
-        <!-- 3D Wax Seal Stamp -->
-        <div class="wax-seal" id="waxSeal" title="Click to break seal and open card">
+        <button class="wax-seal" id="waxSeal" aria-label="Open Invitation">
           <div class="wax-seal-inner">
             <span class="seal-monogram">M</span>
             <span class="seal-subtext">Masood</span>
           </div>
-        </div>
+        </button>
       </div>
     </div>
 
     <div class="envelope-instruction">
       <div class="instruction-tag">
         <span>✉️</span>
-        <span>Tap Wax Seal to Unfold Invitation</span>
+        <span>Tap Wax Seal to Open</span>
       </div>
       <div class="instruction-urdu">شاہی مہر پر ٹیپ کر کے دعوت نامہ کھولیں</div>
+      <button class="skip-btn" onclick="openEnvelope()">Skip directly to card →</button>
     </div>
   </div>
 
-  <!-- ==========================================================================
-       MAIN ROYAL WEDDING INVITATION CARD
-       ========================================================================== -->
+  <!-- Main Card -->
   <main class="invitation-page">
     <div class="container">
       
       <article class="royal-card">
-        <!-- SVG Corner Arabesques -->
+        <!-- Corner Ornaments -->
         <svg class="corner-ornament corner-tl" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M4 56 V16 C4 9.37 9.37 4 16 4 H56 M4 20 C14 20 20 14 20 4 M4 32 C22 32 32 22 32 4 M10 10 Q18 12 20 20 Q12 18 10 10" />
         </svg>
@@ -1218,7 +1152,7 @@
           <path d="M4 56 V16 C4 9.37 9.37 4 16 4 H56 M4 20 C14 20 20 14 20 4 M4 32 C22 32 32 22 32 4 M10 10 Q18 12 20 20 Q12 18 10 10" />
         </svg>
 
-        <!-- Quranic Blessings & Bismillah -->
+        <!-- Quranic Header -->
         <header class="quranic-header">
           <h2 class="bismillah-arabic" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</h2>
           
@@ -1234,84 +1168,62 @@
           <span class="gold-divider-line"></span>
         </div>
 
-        <!-- Invitation Intro Text -->
         <div class="invitation-intro">
-          <p class="invitation-tagline">Royal Invitation · Baraat & Walima</p>
+          <p class="invitation-tagline">Royal Invitation · Baraat &amp; Walima</p>
           <p class="invitation-parents">We cordially invite you to the Baraat &amp; Walima of our beloved son</p>
           <p class="invitation-subtext">Two days, two auspicious venues, one blessed beginning</p>
         </div>
 
-        <!-- Groom Spotlight in 24k Gold Calligraphy -->
+        <!-- Groom Spotlight -->
         <div class="groom-showcase">
           <h1 class="groom-name">Masood Ahmad</h1>
           <p class="groom-urdu" lang="ur">مسعود احمد</p>
 
           <div class="events-banner">
-            <span class="event-badge">✨ Baraat: 15 Nov 2026 (Muridke)</span>
-            <span class="event-badge">🌙 Walima: 16 Nov 2026 (Lahore)</span>
+            <span class="event-badge">✨ Baraat: 15 Nov (Muridke)</span>
+            <span class="event-badge">🌙 Walima: 16 Nov (Lahore)</span>
           </div>
         </div>
 
-        <!-- ==========================================================================
-             INTERACTIVE DUAL EVENT TABS (DAY 1: BARAAT vs DAY 2: WALIMA)
-             ========================================================================== -->
+        <!-- Event Tabs -->
         <section class="events-section" id="eventsSection">
-          
           <div class="tabs-header">
             <button class="tab-btn active" id="tabBaraatBtn" onclick="switchEventTab('baraat')">
               <span class="tab-day-title">Day 1: Baraat</span>
-              <span class="tab-day-subtitle">Sun, 15 Nov 2026 · Muridke</span>
+              <span class="tab-day-subtitle">Sun, 15 Nov · Muridke</span>
             </button>
             <button class="tab-btn" id="tabWalimaBtn" onclick="switchEventTab('walima')">
               <span class="tab-day-title">Day 2: Walima</span>
-              <span class="tab-day-subtitle">Mon, 16 Nov 2026 · Lahore</span>
+              <span class="tab-day-subtitle">Mon, 16 Nov · Lahore</span>
             </button>
           </div>
 
           <div class="event-cards-container">
-            
-            <!-- -------------------------------------------------------------
-                 EVENT 1: BARAAT CARD
-                 ------------------------------------------------------------- -->
+            <!-- BARAAT CARD -->
             <div class="event-detail-card active" id="cardBaraat">
               <div class="event-grid">
-                
-                <div class="event-main-info">
-                  <div>
-                    <span class="event-kicker">Day One Celebration · باوقار بارات</span>
-                    <h2 class="event-title">Baraat Ceremony</h2>
-                    <p class="event-urdu-title" lang="ur">بارات — اتوار 15 نومبر 2026، دعوت مارکی، مریدکے</p>
+                <div>
+                  <span class="event-kicker">Day One Celebration · باوقار بارات</span>
+                  <h2 class="event-title">Baraat Ceremony</h2>
+                  <p class="event-urdu-title" lang="ur">بارات — اتوار 15 نومبر 2026، دعوت مارکی، مریدکے</p>
 
-                    <div class="event-date-box">
-                      <div class="event-date-large">Sunday, 15 November 2026</div>
-                      <div class="event-time-range">12:00 PM to 4:00 PM</div>
-                    </div>
+                  <div class="event-date-box">
+                    <div class="event-date-large">Sunday, 15 November 2026</div>
+                    <div class="event-time-range">12:00 PM to 4:00 PM</div>
                   </div>
 
-                  <!-- Live Countdown to Baraat -->
+                  <!-- Live Countdown -->
                   <div class="countdown-widget">
                     <div class="countdown-title">Countdown to Baraat</div>
                     <div class="countdown-tiles">
-                      <div class="cd-tile">
-                        <div class="cd-num" id="b-days">--</div>
-                        <div class="cd-label">Days</div>
-                      </div>
-                      <div class="cd-tile">
-                        <div class="cd-num" id="b-hours">--</div>
-                        <div class="cd-label">Hours</div>
-                      </div>
-                      <div class="cd-tile">
-                        <div class="cd-num" id="b-mins">--</div>
-                        <div class="cd-label">Mins</div>
-                      </div>
-                      <div class="cd-tile">
-                        <div class="cd-num" id="b-secs">--</div>
-                        <div class="cd-label">Secs</div>
-                      </div>
+                      <div class="cd-tile"><div class="cd-num" id="b-days">--</div><div class="cd-label">Days</div></div>
+                      <div class="cd-tile"><div class="cd-num" id="b-hours">--</div><div class="cd-label">Hours</div></div>
+                      <div class="cd-tile"><div class="cd-num" id="b-mins">--</div><div class="cd-label">Mins</div></div>
+                      <div class="cd-tile"><div class="cd-num" id="b-secs">--</div><div class="cd-label">Secs</div></div>
                     </div>
                   </div>
 
-                  <!-- Schedule Timeline -->
+                  <!-- Schedule -->
                   <div class="timeline-box">
                     <div class="timeline-title">Event Schedule · اوقاتِ تقریب</div>
                     <ul class="timeline-list">
@@ -1331,7 +1243,7 @@
                   </div>
                 </div>
 
-                <!-- Venue & Navigation -->
+                <!-- Venue & Actions -->
                 <div class="event-venue-panel">
                   <div>
                     <span class="venue-kicker">Venue Location · مقام</span>
@@ -1341,10 +1253,8 @@
 
                   <div class="venue-actions-row">
                     <div class="qr-card">
-                      <!-- Stylized Baraat QR Code SVG -->
                       <svg viewBox="0 0 100 100" fill="#092218">
                         <rect x="0" y="0" width="100" height="100" fill="#ffffff" />
-                        <!-- QR markers -->
                         <rect x="10" y="10" width="24" height="24" fill="#092218" />
                         <rect x="14" y="14" width="16" height="16" fill="#ffffff" />
                         <rect x="18" y="18" width="8" height="8" fill="#092218" />
@@ -1357,7 +1267,6 @@
                         <rect x="14" y="70" width="16" height="16" fill="#ffffff" />
                         <rect x="18" y="74" width="8" height="8" fill="#092218" />
 
-                        <!-- Decorative data modules -->
                         <rect x="42" y="12" width="6" height="6" />
                         <rect x="52" y="12" width="6" height="12" />
                         <rect x="42" y="26" width="16" height="6" />
@@ -1377,63 +1286,45 @@
 
                     <div class="venue-buttons">
                       <a class="btn-luxury btn-gold" href="https://maps.app.goo.gl/93bj1aGNCqtUo1it9" target="_blank" rel="noopener">
-                        <span>📍 Open Google Maps</span>
+                        <span>📍 Open in Google Maps</span>
                       </a>
                       <button class="btn-luxury btn-outline-gold" onclick="copyAddress('Dawat Marquee, G.T. Road, near Sou Mori Pull, Muridke')">
                         <span>📋 Copy Venue Address</span>
                       </button>
-                      <button class="btn-luxury btn-outline-gold" onclick="addToCalendar('Baraat of Masood Ahmad', 'Dawat Marquee, G.T. Road, near Sou Mori Pull, Muridke', '2026-11-15T12:00:00', '2026-11-15T16:00:00')">
+                      <button class="btn-luxury btn-outline-gold" onclick="addToCalendar('Baraat of Masood Ahmad', 'Dawat Marquee, Muridke', '2026-11-15T12:00:00', '2026-11-15T16:00:00')">
                         <span>📅 Add to Calendar</span>
                       </button>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
 
-            <!-- -------------------------------------------------------------
-                 EVENT 2: WALIMA CARD
-                 ------------------------------------------------------------- -->
+            <!-- WALIMA CARD -->
             <div class="event-detail-card" id="cardWalima">
               <div class="event-grid">
-                
-                <div class="event-main-info">
-                  <div>
-                    <span class="event-kicker">Day Two Celebration · پرمسرت دعوتِ ولیمہ</span>
-                    <h2 class="event-title">Walima Reception</h2>
-                    <p class="event-urdu-title" lang="ur">دعوتِ ولیمہ — پیر 16 نومبر 2026، اے ڈی پیلس، لاہور</p>
+                <div>
+                  <span class="event-kicker">Day Two Celebration · پرمسرت دعوتِ ولیمہ</span>
+                  <h2 class="event-title">Walima Reception</h2>
+                  <p class="event-urdu-title" lang="ur">دعوتِ ولیمہ — پیر 16 نومبر 2026، اے ڈی پیلس، لاہور</p>
 
-                    <div class="event-date-box">
-                      <div class="event-date-large">Monday, 16 November 2026</div>
-                      <div class="event-time-range">12:00 PM to 4:00 PM</div>
-                    </div>
+                  <div class="event-date-box">
+                    <div class="event-date-large">Monday, 16 November 2026</div>
+                    <div class="event-time-range">12:00 PM to 4:00 PM</div>
                   </div>
 
-                  <!-- Live Countdown to Walima -->
+                  <!-- Live Countdown -->
                   <div class="countdown-widget">
                     <div class="countdown-title">Countdown to Walima</div>
                     <div class="countdown-tiles">
-                      <div class="cd-tile">
-                        <div class="cd-num" id="w-days">--</div>
-                        <div class="cd-label">Days</div>
-                      </div>
-                      <div class="cd-tile">
-                        <div class="cd-num" id="w-hours">--</div>
-                        <div class="cd-label">Hours</div>
-                      </div>
-                      <div class="cd-tile">
-                        <div class="cd-num" id="w-mins">--</div>
-                        <div class="cd-label">Mins</div>
-                      </div>
-                      <div class="cd-tile">
-                        <div class="cd-num" id="w-secs">--</div>
-                        <div class="cd-label">Secs</div>
-                      </div>
+                      <div class="cd-tile"><div class="cd-num" id="w-days">--</div><div class="cd-label">Days</div></div>
+                      <div class="cd-tile"><div class="cd-num" id="w-hours">--</div><div class="cd-label">Hours</div></div>
+                      <div class="cd-tile"><div class="cd-num" id="w-mins">--</div><div class="cd-label">Mins</div></div>
+                      <div class="cd-tile"><div class="cd-num" id="w-secs">--</div><div class="cd-label">Secs</div></div>
                     </div>
                   </div>
 
-                  <!-- Schedule Timeline -->
+                  <!-- Schedule -->
                   <div class="timeline-box">
                     <div class="timeline-title">Event Schedule · اوقاتِ تقریب</div>
                     <ul class="timeline-list">
@@ -1449,7 +1340,7 @@
                   </div>
                 </div>
 
-                <!-- Venue & Navigation -->
+                <!-- Venue & Actions -->
                 <div class="event-venue-panel">
                   <div>
                     <span class="venue-kicker">Venue Location · مقام</span>
@@ -1459,10 +1350,8 @@
 
                   <div class="venue-actions-row">
                     <div class="qr-card">
-                      <!-- Stylized Walima QR Code SVG -->
                       <svg viewBox="0 0 100 100" fill="#092218">
                         <rect x="0" y="0" width="100" height="100" fill="#ffffff" />
-                        <!-- QR markers -->
                         <rect x="10" y="10" width="24" height="24" fill="#092218" />
                         <rect x="14" y="14" width="16" height="16" fill="#ffffff" />
                         <rect x="18" y="18" width="8" height="8" fill="#092218" />
@@ -1475,7 +1364,6 @@
                         <rect x="14" y="70" width="16" height="16" fill="#ffffff" />
                         <rect x="18" y="74" width="8" height="8" fill="#092218" />
 
-                        <!-- Decorative data modules -->
                         <rect x="42" y="14" width="14" height="6" />
                         <rect x="42" y="24" width="6" height="14" />
                         <rect x="54" y="28" width="8" height="6" />
@@ -1495,38 +1383,32 @@
 
                     <div class="venue-buttons">
                       <a class="btn-luxury btn-gold" href="https://maps.app.goo.gl/HCH7PcxxcbjDYYF67" target="_blank" rel="noopener">
-                        <span>📍 Open Google Maps</span>
+                        <span>📍 Open in Google Maps</span>
                       </a>
                       <button class="btn-luxury btn-outline-gold" onclick="copyAddress('AD Palace, Nadeem Shaheed Road, Samanabad Town, Lahore')">
                         <span>📋 Copy Venue Address</span>
                       </button>
-                      <button class="btn-luxury btn-outline-gold" onclick="addToCalendar('Walima of Masood Ahmad', 'AD Palace, Nadeem Shaheed Road, Samanabad Town, Lahore', '2026-11-16T12:00:00', '2026-11-16T16:00:00')">
+                      <button class="btn-luxury btn-outline-gold" onclick="addToCalendar('Walima of Masood Ahmad', 'AD Palace, Samanabad, Lahore', '2026-11-16T12:00:00', '2026-11-16T16:00:00')">
                         <span>📅 Add to Calendar</span>
                       </button>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
-
           </div>
-
         </section>
 
-        <!-- ==========================================================================
-             HOSTS / MEZBAN SECTION & ONE-CLICK RSVP
-             ========================================================================== -->
+        <!-- Hosts Section -->
         <section class="hosts-section" id="hostsSection">
           <div class="section-title-center">
             <span class="section-tag">Mezban · Hosts</span>
-            <h3 class="section-heading">With Best Compliments & RSVP</h3>
+            <h3 class="section-heading">With Best Compliments &amp; RSVP</h3>
             <p class="section-urdu-heading" lang="ur">منجانب: جملہ خاندان و میزبانان</p>
           </div>
 
           <div class="hosts-grid">
-            
-            <!-- Host 1: Father of the Groom -->
+            <!-- Host 1: Father -->
             <div class="host-card">
               <span class="host-badge">Father of the Groom</span>
               <h4 class="host-name">Qari Abdul Ghafoor Siddiqui</h4>
@@ -1534,16 +1416,14 @@
               <div class="host-phone-number">0300 4905872</div>
               
               <div class="host-actions">
-                <a class="btn-call" href="tel:+923004905872">
-                  <span>📞 Call</span>
-                </a>
+                <a class="btn-call" href="tel:+923004905872">📞 Call</a>
                 <a class="btn-whatsapp" href="https://wa.me/923004905872?text=Assalam-o-Alaikum%20Qari%20Sahib!%20Heartiest%20congratulations%20on%20Masood%20Ahmad's%20Baraat%20%26%20Walima.%20Insha'Allah%20we%20will%20attend!" target="_blank" rel="noopener">
-                  <span>💬 WhatsApp</span>
+                  💬 WhatsApp
                 </a>
               </div>
             </div>
 
-            <!-- Host 2: Brother of the Groom -->
+            <!-- Host 2: Brother -->
             <div class="host-card">
               <span class="host-badge">Brother of the Groom</span>
               <h4 class="host-name">Qari Muhammad Abdullah</h4>
@@ -1551,27 +1431,22 @@
               <div class="host-phone-number">0300 7390063</div>
               
               <div class="host-actions">
-                <a class="btn-call" href="tel:+923007390063">
-                  <span>📞 Call</span>
-                </a>
+                <a class="btn-call" href="tel:+923007390063">📞 Call</a>
                 <a class="btn-whatsapp" href="https://wa.me/923007390063?text=Assalam-o-Alaikum%20Abdullah%20bhai!%20Heartiest%20congratulations%20on%20Masood's%20Baraat%20%26%20Walima.%20Insha'Allah%20we%20will%20attend!" target="_blank" rel="noopener">
-                  <span>💬 WhatsApp</span>
+                  💬 WhatsApp
                 </a>
               </div>
             </div>
-
           </div>
         </section>
 
-        <!-- ==========================================================================
-             INTERACTIVE DUA & WISHES WALL (WITH PETALS & SOUND FX)
-             ========================================================================== -->
+        <!-- Blessings Section -->
         <section class="blessings-section">
           <p class="dua-arabic-huge" lang="ar">بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
           <p class="dua-translation-quote">"May Allah bless you, shower His blessings upon you, and unite you both in goodness and harmony."</p>
 
-          <p style="font-family: var(--font-display); font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold-300);">
-            Tap below to shower your heartfelt Duas &amp; Blessings
+          <p style="font-family: var(--font-display); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-300);">
+            Tap below to shower your Duas &amp; Blessings
           </p>
 
           <div class="blessing-chips-row">
@@ -1585,7 +1460,7 @@
         <!-- Footer -->
         <footer>
           <p class="footer-dates">Masood Ahmad · 15 &amp; 16 November 2026</p>
-          <p class="footer-copy">We eagerly await the honour of your presence and your heartfelt prayers.</p>
+          <p class="footer-copy">We eagerly await the honour of your presence and your prayers.</p>
         </footer>
 
       </article>
@@ -1593,13 +1468,8 @@
     </div>
   </main>
 
-  <!-- ==========================================================================
-       SOUND SYNTHESIS, PARTICLE PHYSICS & INTERACTION ENGINE
-       ========================================================================== -->
   <script>
-    /* --------------------------------------------------------------------------
-       1. ROYAL ATMOSPHERE SYNTHESIZER (Web Audio API - 0 External Dependencies)
-       -------------------------------------------------------------------------- */
+    /* 1. AUDIO SYNTHESIZER (Lightweight Web Audio API) */
     let audioCtx = null;
     let isMusicPlaying = false;
     let musicInterval = null;
@@ -1614,8 +1484,7 @@
       }
     }
 
-    // Play pleasant traditional sitar / harp harmonic notes
-    function playSitarPluck(freq, delay = 0, duration = 1.8) {
+    function playSitarPluck(freq, delay = 0, duration = 1.6) {
       if (!audioCtx || !isMusicPlaying) return;
       const osc = audioCtx.createOscillator();
       const gain = audioCtx.createGain();
@@ -1623,46 +1492,40 @@
 
       osc.type = 'triangle';
       osc.frequency.setValueAtTime(freq, audioCtx.currentTime + delay);
-
       filter.type = 'lowpass';
       filter.frequency.setValueAtTime(1400, audioCtx.currentTime + delay);
       filter.frequency.exponentialRampToValueAtTime(300, audioCtx.currentTime + delay + duration);
 
       gain.gain.setValueAtTime(0.0001, audioCtx.currentTime + delay);
-      gain.gain.linearRampToValueAtTime(0.08, audioCtx.currentTime + delay + 0.04);
+      gain.gain.linearRampToValueAtTime(0.06, audioCtx.currentTime + delay + 0.03);
       gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + delay + duration);
 
       osc.connect(filter);
       filter.connect(gain);
       gain.connect(audioCtx.destination);
-
       osc.start(audioCtx.currentTime + delay);
       osc.stop(audioCtx.currentTime + delay + duration);
     }
 
-    // Gentle chiming chord when wax seal is cracked
     function playWaxChime() {
       initAudioContext();
       if (!audioCtx) return;
-      const notes = [523.25, 659.25, 783.99, 1046.50]; // C Major luxury chord
+      const notes = [523.25, 659.25, 783.99, 1046.50];
       notes.forEach((freq, idx) => {
         const osc = audioCtx.createOscillator();
         const gain = audioCtx.createGain();
         osc.type = 'sine';
-        osc.frequency.setValueAtTime(freq, audioCtx.currentTime + idx * 0.08);
-
-        gain.gain.setValueAtTime(0.001, audioCtx.currentTime + idx * 0.08);
-        gain.gain.linearRampToValueAtTime(0.12, audioCtx.currentTime + idx * 0.08 + 0.05);
-        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + idx * 0.08 + 2.5);
-
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime + idx * 0.07);
+        gain.gain.setValueAtTime(0.001, audioCtx.currentTime + idx * 0.07);
+        gain.gain.linearRampToValueAtTime(0.1, audioCtx.currentTime + idx * 0.07 + 0.04);
+        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + idx * 0.07 + 2.0);
         osc.connect(gain);
         gain.connect(audioCtx.destination);
-        osc.start(audioCtx.currentTime + idx * 0.08);
-        osc.stop(audioCtx.currentTime + idx * 0.08 + 2.5);
+        osc.start(audioCtx.currentTime + idx * 0.07);
+        osc.stop(audioCtx.currentTime + idx * 0.07 + 2.0);
       });
     }
 
-    // Melodic oriental ambient arpeggio loop
     const raagScale = [220, 247.5, 277.18, 329.63, 370, 440, 495, 554.37, 659.25];
     let noteStep = 0;
     function startAmbientAtmosphere() {
@@ -1673,9 +1536,9 @@
       musicInterval = setInterval(() => {
         if (!isMusicPlaying) return;
         const currentNote = raagScale[noteStep % raagScale.length];
-        playSitarPluck(currentNote, 0, 2.2);
-        if (Math.random() > 0.4) {
-          playSitarPluck(currentNote * 1.5, 0.35, 1.8);
+        playSitarPluck(currentNote, 0, 2.0);
+        if (Math.random() > 0.45) {
+          playSitarPluck(currentNote * 1.5, 0.35, 1.6);
         }
         noteStep = (noteStep + 1) % raagScale.length;
       }, 750);
@@ -1694,7 +1557,7 @@
         showToast("Audio muted");
       } else {
         startAmbientAtmosphere();
-        showToast("Playing royal atmosphere");
+        showToast("Playing royal atmosphere 🎵");
       }
     }
 
@@ -1711,39 +1574,35 @@
     }
     document.getElementById('audioToggle').addEventListener('click', toggleAudio);
 
-    /* --------------------------------------------------------------------------
-       2. WAX SEAL & ENVELOPE UNBOXING
-       -------------------------------------------------------------------------- */
+    /* 2. ENVELOPE UNBOXING */
     const waxSeal = document.getElementById('waxSeal');
     const envelopeWrapper = document.getElementById('envelopeWrapper');
     const envelopeBox = document.getElementById('envelopeBox');
-    const envelopeScreen = document.getElementById('envelopeScreen');
 
     function openEnvelope() {
       playWaxChime();
-      createBurstParticles(window.innerWidth / 2, window.innerHeight / 2, 70);
+      createBurstParticles(window.innerWidth / 2, window.innerHeight / 2, 40);
 
-      // Open flap
       envelopeBox.classList.add('open');
 
-      // Start music after user interaction
       setTimeout(() => {
         startAmbientAtmosphere();
-      }, 500);
+      }, 400);
 
-      // Fade out overlay
       setTimeout(() => {
         document.getElementById('envelope-screen').classList.add('opened');
-        showToast("Welcome to the wedding of Masood Ahmad ✨");
-      }, 1000);
+        showToast("Welcome to the wedding invitation ✨");
+      }, 800);
     }
 
     waxSeal.addEventListener('click', openEnvelope);
-    envelopeWrapper.addEventListener('click', openEnvelope);
+    envelopeWrapper.addEventListener('click', (e) => {
+      if (e.target !== waxSeal && !e.target.closest('.wax-seal')) {
+        openEnvelope();
+      }
+    });
 
-    /* --------------------------------------------------------------------------
-       3. EVENT TABS SWITCHER
-       -------------------------------------------------------------------------- */
+    /* 3. EVENT TABS */
     function switchEventTab(eventName) {
       const tabBaraat = document.getElementById('tabBaraatBtn');
       const tabWalima = document.getElementById('tabWalimaBtn');
@@ -1763,9 +1622,7 @@
       }
     }
 
-    /* --------------------------------------------------------------------------
-       4. HIGH-PRECISION DUAL COUNTDOWN (BARAAT & WALIMA)
-       -------------------------------------------------------------------------- */
+    /* 4. DUAL COUNTDOWNS */
     const baraatTarget = new Date('2026-11-15T12:00:00+05:00').getTime();
     const walimaTarget = new Date('2026-11-16T12:00:00+05:00').getTime();
 
@@ -1775,8 +1632,6 @@
 
     function updateCountdowns() {
       const now = Date.now();
-
-      // Baraat
       const diffB = baraatTarget - now;
       if (diffB > 0) {
         document.getElementById('b-days').textContent = formatNumber(Math.floor(diffB / (1000 * 60 * 60 * 24)));
@@ -1790,7 +1645,6 @@
         document.getElementById('b-secs').textContent = '00';
       }
 
-      // Walima
       const diffW = walimaTarget - now;
       if (diffW > 0) {
         document.getElementById('w-days').textContent = formatNumber(Math.floor(diffW / (1000 * 60 * 60 * 24)));
@@ -1807,9 +1661,7 @@
     updateCountdowns();
     setInterval(updateCountdowns, 1000);
 
-    /* --------------------------------------------------------------------------
-       5. HELPER ACTIONS (COPY ADDRESS, ADD TO CALENDAR, TOASTS)
-       -------------------------------------------------------------------------- */
+    /* 5. HELPER ACTIONS */
     function showToast(text) {
       const toast = document.getElementById('toast-msg');
       const toastText = document.getElementById('toast-text');
@@ -1817,13 +1669,13 @@
       toast.classList.add('show');
       setTimeout(() => {
         toast.classList.remove('show');
-      }, 3200);
+      }, 3000);
     }
 
     function copyAddress(address) {
       if (navigator.clipboard) {
         navigator.clipboard.writeText(address).then(() => {
-          showToast("Venue address copied to clipboard! 📋");
+          showToast("Venue address copied! 📋");
         });
       } else {
         showToast("Address: " + address);
@@ -1831,7 +1683,6 @@
     }
 
     function addToCalendar(title, location, startISO, endISO) {
-      // Create .ics calendar download
       const startDate = startISO.replace(/[-:]/g, "") + "00";
       const endDate = endISO.replace(/[-:]/g, "") + "00";
       const icsContent = 
@@ -1860,13 +1711,11 @@ END:VCALENDAR`;
     }
 
     function showerBlessing(duaText) {
-      createBurstParticles(window.innerWidth / 2, window.innerHeight * 0.65, 50);
+      createBurstParticles(window.innerWidth / 2, window.innerHeight * 0.65, 35);
       showToast(duaText + " ✨");
     }
 
-    /* --------------------------------------------------------------------------
-       6. ROSE PETALS & GOLD STARDUST PARTICLE ENGINE (HTML5 CANVAS)
-       -------------------------------------------------------------------------- */
+    /* 6. PARTICLE CANVAS (Mobile-Optimized Count) */
     const canvas = document.getElementById('fx-canvas');
     const ctx = canvas.getContext('2d');
     let width = canvas.width = window.innerWidth;
@@ -1877,30 +1726,28 @@ END:VCALENDAR`;
       height = canvas.height = window.innerHeight;
     });
 
-    // Petal class with 3D rotation simulation
     class RosePetal {
       constructor() {
         this.reset();
       }
       reset() {
         this.x = Math.random() * width;
-        this.y = -40 - Math.random() * 50;
-        this.size = 14 + Math.random() * 16;
-        this.speedY = 1 + Math.random() * 2;
-        this.speedX = (Math.random() - 0.5) * 1.5;
+        this.y = -30 - Math.random() * 40;
+        this.size = 12 + Math.random() * 12;
+        this.speedY = 1 + Math.random() * 1.6;
+        this.speedX = (Math.random() - 0.5) * 1.2;
         this.rotation = Math.random() * Math.PI * 2;
-        this.rotSpeed = (Math.random() - 0.5) * 0.03;
+        this.rotSpeed = (Math.random() - 0.5) * 0.025;
         this.flip = Math.random() * Math.PI;
-        this.flipSpeed = 0.02 + Math.random() * 0.03;
-        // Color variation: crimson rose to champagne ivory
+        this.flipSpeed = 0.02 + Math.random() * 0.025;
         this.type = Math.random() > 0.4 ? 'rose' : 'gold';
       }
       update() {
         this.y += this.speedY;
-        this.x += Math.sin(this.y * 0.01) * 1.2 + this.speedX;
+        this.x += Math.sin(this.y * 0.01) * 1.0 + this.speedX;
         this.rotation += this.rotSpeed;
         this.flip += this.flipSpeed;
-        if (this.y > height + 40) {
+        if (this.y > height + 30) {
           this.reset();
         }
       }
@@ -1911,14 +1758,12 @@ END:VCALENDAR`;
         ctx.scale(Math.cos(this.flip), 1);
 
         if (this.type === 'rose') {
-          // Velvet crimson rose petal gradient
           const grad = ctx.createRadialGradient(0, 0, 2, 0, 0, this.size);
           grad.addColorStop(0, '#e63946');
-          grad.addColorStop(0.5, '#b5172d');
+          grad.addColorStop(0.6, '#b5172d');
           grad.addColorStop(1, '#660708');
           ctx.fillStyle = grad;
         } else {
-          // Shimmering gold leaf petal
           const grad = ctx.createRadialGradient(0, 0, 2, 0, 0, this.size);
           grad.addColorStop(0, '#fff4b8');
           grad.addColorStop(0.7, '#d4af37');
@@ -1935,20 +1780,19 @@ END:VCALENDAR`;
       }
     }
 
-    // Burst Sparkle Particle for Clicks / Blessings
     class BurstParticle {
       constructor(x, y) {
         this.x = x;
         this.y = y;
         const angle = Math.random() * Math.PI * 2;
-        const speed = 2 + Math.random() * 7;
+        const speed = 2 + Math.random() * 5;
         this.vx = Math.cos(angle) * speed;
-        this.vy = Math.sin(angle) * speed - 1.5;
-        this.gravity = 0.15;
+        this.vy = Math.sin(angle) * speed - 1.2;
+        this.gravity = 0.14;
         this.life = 1;
-        this.decay = 0.015 + Math.random() * 0.02;
+        this.decay = 0.02 + Math.random() * 0.025;
         this.color = ['#f5d760', '#ffeb99', '#e63946', '#ffffff'][Math.floor(Math.random() * 4)];
-        this.radius = 2 + Math.random() * 3.5;
+        this.radius = 2 + Math.random() * 2.5;
       }
       update() {
         this.x += this.vx;
@@ -1967,36 +1811,34 @@ END:VCALENDAR`;
       }
     }
 
+    // 14 petals for smooth mobile 60fps
     const petals = [];
     const burstParticles = [];
-    for (let i = 0; i < 24; i++) {
+    const petalCount = window.innerWidth < 768 ? 12 : 20;
+    for (let i = 0; i < petalCount; i++) {
       petals.push(new RosePetal());
     }
 
-    function createBurstParticles(x, y, count = 40) {
+    function createBurstParticles(x, y, count = 25) {
       for (let i = 0; i < count; i++) {
         burstParticles.push(new BurstParticle(x, y));
       }
     }
 
-    // Click anywhere creates gentle gold sparkles
     window.addEventListener('click', (e) => {
-      // Don't burst on wax seal or buttons to prevent conflict
-      if (!e.target.closest('button, a, .wax-seal')) {
-        createBurstParticles(e.clientX, e.clientY, 12);
+      if (!e.target.closest('button, a, .wax-seal, .envelope-box')) {
+        createBurstParticles(e.clientX, e.clientY, 10);
       }
     });
 
     function animateParticles() {
       ctx.clearRect(0, 0, width, height);
 
-      // Petals
       petals.forEach(p => {
         p.update();
         p.draw();
       });
 
-      // Burst particles
       for (let i = burstParticles.length - 1; i >= 0; i--) {
         const bp = burstParticles[i];
         bp.update();
@@ -2012,4 +1854,3 @@ END:VCALENDAR`;
   </script>
 </body>
 </html>
-
